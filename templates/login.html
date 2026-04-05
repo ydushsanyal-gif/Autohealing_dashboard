@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Login | CloudFusion AI{% endblock %}
+{% block page_heading %}Secure Login{% endblock %}
+
+{% block content %}
+<section class="login-wrapper">
+    <div class="glass-card login-card">
+        <div class="login-icon">
+            <i class="fa-solid fa-user-shield"></i>
+        </div>
+        <h2>Sign in to CloudFusion AI</h2>
+        <p>Access your intelligent multi-cloud workspace</p>
+
+        <form class="login-form">
+            <input type="email" placeholder="Enter your email" required>
+            <input type="password" placeholder="Enter your password" required>
+            <button type="submit" class="btn-primary full-width">Login</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

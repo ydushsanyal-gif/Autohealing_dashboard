@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Self-Healing | CloudFusion AI{% endblock %}
+{% block page_heading %}Self-Healing Infrastructure{% endblock %}
+
+{% block content %}
+<section class="cards-grid">
+    <div class="glass-card feature-card">
+        <i class="fa-solid fa-eye"></i>
+        <h3>Detect</h3>
+        <p>AI observes failures, anomalies, unhealthy services, and threshold breaches in real time.</p>
+    </div>
+    <div class="glass-card feature-card">
+        <i class="fa-solid fa-stethoscope"></i>
+        <h3>Diagnose</h3>
+        <p>Platform correlates logs, metrics, and system dependencies to identify likely root cause.</p>
+    </div>
+    <div class="glass-card feature-card">
+        <i class="fa-solid fa-bolt-lightning"></i>
+        <h3>Heal</h3>
+        <p>Automated runbooks trigger restart, failover, scaling, or traffic rerouting workflows.</p>
+    </div>
+</section>
+
+<section class="glass-card">
+    <h3>Recent Autonomous Recovery Events</h3>
+    <ul class="styled-list">
+        <li>Restarted failed container service in production</li>
+        <li>Shifted traffic to healthy region after latency spike</li>
+        <li>Scaled node pool after sustained CPU usage</li>
+        <li>Recovered unhealthy storage mount automatically</li>
+    </ul>
+</section>
+{% endblock %}

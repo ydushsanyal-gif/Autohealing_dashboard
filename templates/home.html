@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}Home | CloudFusion AI{% endblock %}
+{% block page_heading %}Welcome to CloudFusion AI{% endblock %}
+
+{% block content %}
+<section class="hero-section glass-card">
+    <div class="hero-left">
+        <span class="hero-tag">AI-Powered Multi-Cloud SaaS Platform</span>
+        <h1>Control AWS, Azure & GCP with intelligent cost optimization and self-healing automation.</h1>
+        <p>
+            CloudFusion AI is a futuristic Flask-based SaaS dashboard concept built for
+            resume standout. It combines cloud visibility, AI recommendations, healing automation,
+            and premium design into one product-style web experience.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="{{ url_for('dashboard') }}" class="btn-primary">Open Dashboard</a>
+            <a href="{{ url_for('optimizer') }}" class="btn-secondary">Explore Optimizer</a>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-box">
+                <h3>31%</h3>
+                <p>Cost Saved</p>
+            </div>
+            <div class="stat-box">
+                <h3>248</h3>
+                <p>Auto-Healed Events</p>
+            </div>
+            <div class="stat-box">
+                <h3>99.97%</h3>
+                <p>Service Uptime</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <div class="mini-panel glass-card">
+            <h3>Cloud Health Snapshot</h3>
+            <div class="mini-progress-group">
+                <label>AWS Efficiency</label>
+                <div class="progress"><div style="width: 92%;"></div></div>
+            </div>
+            <div class="mini-progress-group">
+                <label>Azure Efficiency</label>
+                <div class="progress"><div style="width: 87%;"></div></div>
+            </div>
+            <div class="mini-progress-group">
+                <label>GCP Efficiency</label>
+                <div class="progress"><div style="width: 90%;"></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cards-grid">
+    <div class="glass-card feature-card">
+        <i class="fa-solid fa-cloud-bolt"></i>
+        <h3>Multi-Cloud Visibility</h3>
+        <p>Centralize operations across AWS, Azure, and GCP with one premium dashboard.</p>
+    </div>
+    <div class="glass-card feature-card">
+        <i class="fa-solid fa-robot"></i>
+        <h3>AI Recommendations</h3>
+        <p>Detect waste, right-size workloads, and forecast spend with smart optimization logic.</p>
+    </div>
+    <div class="glass-card feature-card">
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+        <h3>Self-Healing Workflows</h3>
+        <p>Automatically recover unhealthy services with restart, failover, and scaling actions.</p>
+    </div>
+</section>
+{% endblock %}

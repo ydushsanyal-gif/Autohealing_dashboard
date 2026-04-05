@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Reports | CloudFusion AI{% endblock %}
+{% block page_heading %}Reports & Insights{% endblock %}
+
+{% block content %}
+<section class="stats-grid">
+    <div class="glass-card stat-card">
+        <i class="fa-solid fa-chart-column"></i>
+        <h3>99.97%</h3>
+        <p>Uptime</p>
+    </div>
+    <div class="glass-card stat-card">
+        <i class="fa-solid fa-receipt"></i>
+        <h3>$162K</h3>
+        <p>Total Spend</p>
+    </div>
+    <div class="glass-card stat-card">
+        <i class="fa-solid fa-gauge-high"></i>
+        <h3>182ms</h3>
+        <p>Avg Response Time</p>
+    </div>
+    <div class="glass-card stat-card">
+        <i class="fa-solid fa-shield"></i>
+        <h3>94%</h3>
+        <p>Security Score</p>
+    </div>
+</section>
+
+<section class="glass-card chart-card">
+    <h3>Monthly Performance Activity</h3>
+    <div class="animated-bars reports-bars">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</section>
+{% endblock %}
